@@ -1,0 +1,6 @@
+ - name: Test Playbook
+   hosts: all
+   tasks:
+	- name: COPY files
+	  copy: src=/tmp/test.txt=/tmp/test2.txt
+		owner=root group=root mode=0644	
